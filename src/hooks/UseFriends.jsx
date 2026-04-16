@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const UseFriends = () => {
+const useFriends = () => {
 
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,4 +26,4 @@ const UseFriends = () => {
   return {friends, loading}
 };
 
-export default UseFriends;
+export default useFriends;

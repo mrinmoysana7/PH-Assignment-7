@@ -9,21 +9,22 @@ import ErrorPage from "../component/pages/errorPage/ErrorPage";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: RootLayout,
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        index: "true", Component: HomePage
+        index: true, element: <HomePage />
       },
       {
-        path: "/timeline", Component: TimelinePage
+        path: "/timeline", element: <TimelinePage />
       },
       {
-        path: "/stats", Component: StatsPage
+        path: "/stats",  element: <StatsPage />
       },
       {
-        path: "/friendDetails", Component: FriendDetailsPage
+        path: "/friendDetails/:id", element: <FriendDetailsPage />
       }
     ],
-    errorElement: <ErrorPage></ErrorPage>
+    
   },
 ]);
