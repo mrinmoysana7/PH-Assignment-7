@@ -1,4 +1,11 @@
 @import "tailwindcss";
  @plugin "daisyui" {
-   themes: forest --default;
+   themes: light --default;
  }
+
+ /* nav a.active {
+  color: white;
+  background-color: #1F4D3E;
+  padding: 12px 16px;
+  border-radius: 8px;
+ } */
