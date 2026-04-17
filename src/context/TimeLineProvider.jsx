@@ -1,13 +1,16 @@
-import { TimeLineContext } from "./TimeLineContext";
+import { useState } from "react";
+import { TimeLineContext } from "./TimeLineContext.jsx";
 
 const TimeLineProvider = ({ children }) => {
-  const data = {
-    name: "Raju",
-    Class: 10,
-  };
+ 
+  const [timelineData, setTimelineData] = useState([])
+
+  const addInteraction = (interaction) => {
+     setTimelineData((prev) => [interaction, ...prev]);
+  }
 
   return (
-    <TimeLineContext.Provider value={data}>{children}</TimeLineContext.Provider>
+    <TimeLineContext.Provider value={{timelineData, addInteraction}}>{children}</TimeLineContext.Provider>
   );
 };
 

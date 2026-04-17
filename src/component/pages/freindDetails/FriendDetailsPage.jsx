@@ -3,6 +3,10 @@ import useFriends from "../../../hooks/useFriends";
 import { useParams } from "react-router-dom";
 import { LuMessageSquareText, LuPhoneCall } from "react-icons/lu";
 import { FiVideo } from "react-icons/fi";
+import { useContext } from "react";
+import { TimeLineContext } from "../../../context/TimeLineContext";
+import { toast } from "react-toastify";
+
 
 const FriendDetailsPage = () => {
   const { id } = useParams();
@@ -10,12 +14,36 @@ const FriendDetailsPage = () => {
   const expectedFriends = friends.find((friend) => friend.id === Number(id));
   console.log(expectedFriends, "Expected Friends");
 
+  const { addInteraction } = useContext(TimeLineContext);
+
   if (loading) {
     return (
       <div className="flex min-h-[50vh] justify-center items-center">
         <MoonLoader color="green" />
       </div>
     );
+  }
+  
+
+  const handleInteraction = (type) => {
+    const newData = {
+      id: Date.now(),
+      type: type,
+      name: expectedFriends.name,
+      date: new Date().toLocaleString()
+    };
+
+    addInteraction(newData);
+    if(type === "call"){
+      toast.success(`Call with ${expectedFriends.name} `);
+    }
+    if(type === "text"){
+      toast.success(`Text with ${expectedFriends.name} `);
+    }
+    if(type === "video"){
+      toast.success(`Video call with ${expectedFriends.name} `);
+    }
+
   }
 
   return (
@@ -88,19 +116,19 @@ const FriendDetailsPage = () => {
         <div className="bg-white mt-6 p-6 rounded-lg">
           <h2>Quick Check-In</h2>
           <div className="stat-card grid grid-cols-3 gap-6 mt-4">
-            <button className="text-center bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
+            <button onClick={() => handleInteraction("call")} className="text-center bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
               <h2 className="font-semibold text-[32px]">
                 <LuPhoneCall />
               </h2>
               <p>Call</p>
             </button>
-            <button className="text-cente bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
+            <button onClick={() => handleInteraction("text")} className="text-cente bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
               <h2 className="font-semibold text-[32px]">
                 <LuMessageSquareText />
               </h2>
               <p>Text</p>
             </button>
-            <button className="text-center bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
+            <button onClick={() => handleInteraction("video")} className="text-center bg-[#e9e9e956] flex flex-col justify-center items-center text-[#275a49e0] rounded-lg space-y-2 hover:shadow-xl p-8">
               <h2 className="font-semibold text-[32px]">
                 <FiVideo />
               </h2>
