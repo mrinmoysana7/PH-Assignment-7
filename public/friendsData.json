@@ -8,7 +8,7 @@
     "status": "overdue",
     "tags": "college friend",
     "bio": "Co-founder of a fintech startup, known Aarav since university days.",
-    "goal": "Reconnect and explore collaboration opportunities",
+    "goal": 25,
     "next_due_date": "2026-04-20"
   },
   {
@@ -20,7 +20,7 @@
     "status": "on-track",
     "tags": "client",
     "bio": "UX designer client working on SaaS product redesign.",
-    "goal": "Follow up on UI feedback",
+    "goal": 15,
     "next_due_date": "2026-04-25"
   },
   {
@@ -32,7 +32,7 @@
     "status": "almost due",
     "tags": "mentor",
     "bio": "Senior engineer mentor guiding career growth.",
-    "goal": "Schedule mentorship session",
+    "goal": 7,
     "next_due_date": "2026-04-18"
   },
   {
@@ -44,7 +44,7 @@
     "status": "overdue",
     "tags": "friend",
     "bio": "Close friend from previous workplace.",
-    "goal": "Catch up over video call",
+    "goal": 20,
     "next_due_date": "2026-04-19"
   },
   {
@@ -56,7 +56,7 @@
     "status": "on-track",
     "tags": "gym buddy",
     "bio": "Workout partner from local gym.",
-    "goal": "Plan next workout session",
+    "goal": 17,
     "next_due_date": "2026-04-16"
   },
   {
@@ -68,7 +68,7 @@
     "status": "almost due",
     "tags": "client",
     "bio": "Marketing consultant for brand campaigns.",
-    "goal": "Review campaign performance",
+    "goal": 9,
     "next_due_date": "2026-04-21"
   },
   {
@@ -80,7 +80,7 @@
     "status": "overdue",
     "tags": "family",
     "bio": "Cousin working abroad in Dubai.",
-    "goal": "Check family updates",
+    "goal": 21,
     "next_due_date": "2026-04-22"
   },
   {
@@ -92,7 +92,7 @@
     "status": "on-track",
     "tags": "colleague",
     "bio": "Product manager collaborating on SaaS product.",
-    "goal": "Discuss roadmap",
+    "goal": 35,
     "next_due_date": "2026-04-17"
   },
   {
@@ -104,7 +104,7 @@
     "status": "almost due",
     "tags": "networking",
     "bio": "Met at tech conference last year.",
-    "goal": "Reconnect for opportunities",
+    "goal": 42,
     "next_due_date": "2026-04-19"
   },
   {
@@ -116,7 +116,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "School friend living in Bangalore.",
-    "goal": "Plan meetup",
+    "goal": 28,
     "next_due_date": "2026-04-16"
   },
 
@@ -129,7 +129,7 @@
     "status": "overdue",
     "tags": "client",
     "bio": "Freelance developer client.",
-    "goal": "Follow up on pending invoice",
+    "goal": 25,
     "next_due_date": "2026-04-20"
   },
   {
@@ -141,7 +141,7 @@
     "status": "almost due",
     "tags": "colleague",
     "bio": "Team member from previous company.",
-    "goal": "Reconnect professionally",
+    "goal": 29,
     "next_due_date": "2026-04-18"
   },
   {
@@ -153,7 +153,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "Gaming buddy from online community.",
-    "goal": "Play together this weekend",
+    "goal": 14,
     "next_due_date": "2026-04-17"
   },
   {
@@ -165,7 +165,7 @@
     "status": "overdue",
     "tags": "mentor",
     "bio": "Career advisor helping with leadership growth.",
-    "goal": "Schedule mentoring call",
+    "goal": 50,
     "next_due_date": "2026-04-21"
   },
   {
@@ -177,7 +177,7 @@
     "status": "almost due",
     "tags": "networking",
     "bio": "Investor contact from startup event.",
-    "goal": "Pitch new idea",
+    "goal": 44,
     "next_due_date": "2026-04-19"
   },
 
@@ -190,7 +190,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "Close friend from university.",
-    "goal": "Dinner meetup",
+    "goal": 47,
     "next_due_date": "2026-04-16"
   },
   {
@@ -202,7 +202,7 @@
     "status": "overdue",
     "tags": "client",
     "bio": "E-commerce business owner.",
-    "goal": "Discuss marketing plan",
+    "goal": 36,
     "next_due_date": "2026-04-22"
   },
   {
@@ -214,7 +214,7 @@
     "status": "almost due",
     "tags": "colleague",
     "bio": "HR manager from previous job.",
-    "goal": "Reconnect professionally",
+    "goal": 16,
     "next_due_date": "2026-04-20"
   },
   {
@@ -226,7 +226,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "Travel companion from last trip.",
-    "goal": "Plan next trip",
+    "goal": 27,
     "next_due_date": "2026-04-17"
   },
   {
@@ -238,7 +238,7 @@
     "status": "overdue",
     "tags": "family",
     "bio": "Relative living in another city.",
-    "goal": "Family catch-up call",
+    "goal": 45,
     "next_due_date": "2026-04-23"
   },
 
@@ -251,7 +251,7 @@
     "status": "on-track",
     "tags": "networking",
     "bio": "Met at hackathon event.",
-    "goal": "Discuss collaboration",
+    "goal": 28,
     "next_due_date": "2026-04-18"
   },
   {
@@ -263,7 +263,7 @@
     "status": "almost due",
     "tags": "client",
     "bio": "Startup founder client.",
-    "goal": "Project update meeting",
+    "goal": 21,
     "next_due_date": "2026-04-21"
   },
   {
@@ -275,7 +275,7 @@
     "status": "overdue",
     "tags": "mentor",
     "bio": "Industry expert guiding business strategy.",
-    "goal": "Strategy discussion",
+    "goal": 31,
     "next_due_date": "2026-04-24"
   },
   {
@@ -287,7 +287,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "Friend from book club.",
-    "goal": "Discuss next book",
+    "goal": 22,
     "next_due_date": "2026-04-17"
   },
   {
@@ -299,7 +299,7 @@
     "status": "almost due",
     "tags": "colleague",
     "bio": "Team lead from previous company.",
-    "goal": "Reconnect for referral",
+    "goal": 17,
     "next_due_date": "2026-04-19"
   },
 
@@ -312,7 +312,7 @@
     "status": "on-track",
     "tags": "friend",
     "bio": "Neighbor and close friend.",
-    "goal": "Coffee meetup",
+    "goal": 12,
     "next_due_date": "2026-04-16"
   },
   {
@@ -336,7 +336,7 @@
     "status": "almost due",
     "tags": "networking",
     "bio": "Met during online webinar.",
-    "goal": "Follow up connection",
+    "goal": 30,
     "next_due_date": "2026-04-20"
   },
   {
@@ -348,7 +348,7 @@
     "status": "on-track",
     "tags": "colleague",
     "bio": "Developer teammate.",
-    "goal": "Code review sync",
+    "goal": 24,
     "next_due_date": "2026-04-18"
   },
   {
@@ -360,7 +360,7 @@
     "status": "overdue",
     "tags": "family",
     "bio": "Distant relative.",
-    "goal": "Reconnect family bond",
+    "goal": 56,
     "next_due_date": "2026-04-23"
   },
 
@@ -373,7 +373,7 @@
     "status": "on-track",
     "tags": "client",
     "bio": "Freelance client for website project.",
-    "goal": "Deliver project update",
+    "goal": 25,
     "next_due_date": "2026-04-17"
   },
   {
@@ -385,7 +385,7 @@
     "status": "almost due",
     "tags": "friend",
     "bio": "Travel friend.",
-    "goal": "Plan next trip",
+    "goal": 47,
     "next_due_date": "2026-04-21"
   },
   {
@@ -397,7 +397,7 @@
     "status": "overdue",
     "tags": "mentor",
     "bio": "Startup advisor.",
-    "goal": "Business guidance session",
+    "goal": 35,
     "next_due_date": "2026-04-24"
   },
   {
@@ -409,7 +409,7 @@
     "status": "on-track",
     "tags": "colleague",
     "bio": "Designer from current team.",
-    "goal": "Design sync",
+    "goal": 21,
     "next_due_date": "2026-04-16"
   },
   {
@@ -421,7 +421,7 @@
     "status": "almost due",
     "tags": "networking",
     "bio": "Met at business meetup.",
-    "goal": "Follow up meeting",
+    "goal": 16,
     "next_due_date": "2026-04-22"
   },
   {
@@ -433,7 +433,7 @@
     "status": "overdue",
     "tags": "family",
     "bio": "Family friend living abroad.",
-    "goal": "Reconnect via call",
+    "goal": 25,
     "next_due_date": "2026-04-25"
   }
 ]

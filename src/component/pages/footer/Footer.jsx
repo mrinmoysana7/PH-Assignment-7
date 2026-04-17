@@ -3,7 +3,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2A5D4A] text-center text-[#DAD7CD] py-12 px-4 mt-20">
+    <footer className="bg-[#2A5D4A] text-center text-[#DAD7CD] py-12 px-4">
 
       {/* BRAND */}
       <h1 className="text-4xl font-bold text-white">KeenKeeper</h1>

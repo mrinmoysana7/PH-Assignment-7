@@ -1,9 +1,11 @@
+import { useContext } from "react";
+import { TimeLineContext } from "../../../context/TimeLineContext";
+
 const TimelinePage = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const contextData = useContext(TimeLineContext);
+  console.log(contextData);
+
+  return <div></div>;
 };
 
 export default TimelinePage;
