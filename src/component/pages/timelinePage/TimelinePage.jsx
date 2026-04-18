@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import callImage from "../../../assets/images/call.png";
 import textImage from "../../../assets/images/text.png";
 import videoImage from "../../../assets/images/video.png";
@@ -7,8 +7,14 @@ import { useNavigate } from "react-router-dom";
 
 const TimelinePage = () => {
   const { timelineData } = useContext(TimeLineContext);
+  const [filter, setFilter] = useState("all");
   const navigate = useNavigate();
   //   console.log(contextData);
+
+  const filteredData =
+    filter === "all"
+      ? timelineData
+      : timelineData.filter((item) => item.type === filter);
 
   return (
     <div className="container mx-auto space-y-6 py-5 md:py-10 px-10 md:px-5">
@@ -27,25 +33,36 @@ const TimelinePage = () => {
             className="btn bg-transparent border-2 border-white
            md:w-80 m-1"
           >
-            Filter timeline
+            Filter: {filter}
           </div>
           <ul
             tabIndex="-1"
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
           >
             <li>
-              <a>call</a>
+              <button onClick={() => setFilter("all")}>All</button>
             </li>
             <li>
-              <a>text</a>
+              <button onClick={() => setFilter("call")}>Call</button>
             </li>
             <li>
-              <a>video</a>
+              <button onClick={() => setFilter("text")}>Text</button>
+            </li>
+            <li>
+              <button onClick={() => setFilter("video")}>Video</button>
             </li>
           </ul>
+          {filteredData.map((item, index) => {
+            <div key={index}>
+              <h2 className="capitalize">
+                {item.type} with {item.name}
+              </h2>
+              <p>{item.date}</p>
+            </div>;
+          })}
         </div>
       </div>
-      {timelineData.length === 0 ? (
+      {filteredData.length === 0 ? (
         <div className="flex bg-white rounded-lg shadow-lg flex-col items-center justify-center text-center py-12 mb-5 md:mb-1">
           <img
             src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png"
@@ -68,7 +85,7 @@ const TimelinePage = () => {
           </button>
         </div>
       ) : (
-        timelineData.map((friend, index) => {
+        filteredData.map((friend, index) => {
           return (
             <div
               key={index}
