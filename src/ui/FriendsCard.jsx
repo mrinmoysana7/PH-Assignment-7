@@ -13,7 +13,15 @@ const FriendsCard = ({ friend }) => {
         <span className="px-3 my-2 py-1 rounded-full font-medium bg-[#CBFADB] text-[#244D3F]">
           {friend.tags}
         </span>
-        <span className="">{friend.status}</span>
+        <span className={`px-3 py-1 rounded-full text-sm font-medium
+    ${
+      friend.status === "on-track"
+        ? "bg-green-500 text-green-50"
+        : friend.status === "overdue"
+        ? "bg-red-100 text-red-700"
+        : "bg-yellow-100 text-yellow-700"
+    }
+  `}>{friend.status}</span>
       </div>
     </Link>
   );

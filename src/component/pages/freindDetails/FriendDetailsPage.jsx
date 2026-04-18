@@ -62,7 +62,15 @@ const FriendDetailsPage = () => {
           <span className="px-3 my-2 py-1 rounded-full font-medium bg-[#CBFADB] text-[#244D3F]">
             {expectedFriends.tags}
           </span>
-          <span className="">{expectedFriends.status}</span>
+          <span className={`px-3 py-1 rounded-full text-sm font-medium
+    ${
+      expectedFriends.status === "on-track"
+        ? "bg-green-500 text-green-50"
+        : expectedFriends.status === "overdue"
+        ? "bg-red-100 text-red-700"
+        : "bg-yellow-100 text-yellow-700"
+    }
+  `}>{expectedFriends.status}</span>
         </div>
         <div>
           <div className="flex flex-col space-y-2">
