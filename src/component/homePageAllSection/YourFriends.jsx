@@ -7,7 +7,7 @@ const YourFriends = () => {
   // console.log(friends, loading)
 
   return (
-    <div className="container mx-auto pb-20">
+    <div className="container mx-auto pb-20 px-10 md:px-5">
       <h1 className="font-semibold text-[24px] mb-10">Your Friends</h1>
       {loading ? (
         <div className="flex justify-center items-center">

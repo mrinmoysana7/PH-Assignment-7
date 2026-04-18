@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { PieChart, Pie, Tooltip, Legend } from "recharts";
+import { PieChart, Pie, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { TimeLineContext } from "../../../context/TimeLineContext";
 import { Link } from "react-router";
 
@@ -22,7 +22,9 @@ const StatsPage = () => {
   if (timelineData.length === 0) {
     return (
       <div className="container mx-auto p-10">
-        <h2 className="text-4xl font-bold mb-6">Friendship Analytics</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          Friendship Analytics
+        </h2>
 
         <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-center">
           <img
@@ -49,23 +51,25 @@ const StatsPage = () => {
 
   //   Main Data
   return (
-    <div className="container mx-auto p-10">
-      <h2 className="font-bold text-[48px] ">Friendship Analytics</h2>
+    <div className="container mx-auto py-10 px-10">
+      <h2 className="font-bold text-[25px] md:text-[48px] ">
+        Friendship Analytics
+      </h2>
 
-      <div className="bg-white p-6 rounded-lg mt-6 shadow-lg">
-        <h2 className="text-[20px] text-[#244D3F] font-medium mb-4">By Interaction Type</h2>
-
-        <PieChart width={400} className="mx-auto" height={300}>
-          <Pie
-            data={data}
-            dataKey="value"
-            innerRadius={80}
-            outerRadius={100}
-            paddingAngle={5}
-          />
-          <Tooltip />
-          <Legend />
-        </PieChart>
+      <div className="w-full bg-white rounded-lg mt-5 h-[300px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              innerRadius={60}
+              outerRadius={90}
+              paddingAngle={5}
+            />
+            <Tooltip />
+            <Legend />
+          </PieChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

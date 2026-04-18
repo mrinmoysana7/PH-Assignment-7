@@ -1,13 +1,13 @@
 const Banner = () => {
   return (
-    <div className="banner container mx-auto ">
-      <div className="banner-heading text-center pt-15">
-        <h2 className="text-[48px] font-bold text-[#1F2937]">
+    <div className="banner container mx-auto px-10 md:px-5 ">
+      <div className="banner-heading text-center pt-8 md:pt-15">
+        <h2 className="text-[30px] md:text-[48px] font-bold text-[#1F2937]">
           Friends to keep close in your life
         </h2>
         <p className="text-[#64748B] mt-4 mb-8">
           Your personal shelf of meaningful connections. Browse, tend, and
-          nurture the <br /> relationships that matter most.
+          nurture the relationships that matter most.
         </p>
         <button className="font-semibold cursor-pointer hover:scale-110 shadow-sm text-white bg-[#275a49e0] px-4 py-3 rounded-md">
           Add a Friend

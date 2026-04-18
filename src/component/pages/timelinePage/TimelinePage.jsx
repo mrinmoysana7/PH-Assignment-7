@@ -5,24 +5,48 @@ import videoImage from "../../../assets/images/video.png";
 import { TimeLineContext } from "../../../context/TimeLineContext";
 import { useNavigate } from "react-router-dom";
 
-
 const TimelinePage = () => {
   const { timelineData } = useContext(TimeLineContext);
   const navigate = useNavigate();
   //   console.log(contextData);
 
   return (
-    <div className="container mx-auto space-y-6 py-20">
+    <div className="container mx-auto space-y-6 py-5 md:py-10 px-10 md:px-5">
       <div>
-        <h2 className="font-bold text-[48px]">Timeline</h2>
-        <input
+        <h2 className="font-bold text-[30px] md:text-[48px]">Timeline</h2>
+        {/* <input
           className="border border-gray-200 px-4 py-2 rounded-md mt-2"
           type="text"
           placeholder="Filter timeline"
-        />
+        /> */}
+
+        <div className="dropdown">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn bg-transparent border-2 border-white
+           md:w-80 m-1"
+          >
+            Filter timeline
+          </div>
+          <ul
+            tabIndex="-1"
+            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
+            <li>
+              <a>call</a>
+            </li>
+            <li>
+              <a>text</a>
+            </li>
+            <li>
+              <a>video</a>
+            </li>
+          </ul>
+        </div>
       </div>
       {timelineData.length === 0 ? (
-        <div className="flex bg-white rounded-lg shadow-lg flex-col items-center justify-center text-center py-12">
+        <div className="flex bg-white rounded-lg shadow-lg flex-col items-center justify-center text-center py-12 mb-5 md:mb-1">
           <img
             src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png"
             alt="empty"

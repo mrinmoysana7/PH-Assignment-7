@@ -4,11 +4,11 @@ import MyNavLink from "./MyNavLink";
 
 const Navbar = () => {
   return (
-    <nav className="shadow-sm px-10 md:px-20">
-      <div className="flex py-5 justify-between">
-        <img src={Navlogo} className="" alt="nav-logo" />
+    <nav className="shadow-sm px-10 md:px-20 sticky top-0 z-50 bg-white">
+      <div className="md:flex py-5 justify-between">
+        <img src={Navlogo} className="mx-auto md:mx-0" alt="nav-logo" />
 
-        <ul className="flex items-center gap-5">
+        <ul className="flex items-center mt-5 md:mt-0 justify-center  gap-5">
           <li>
             <MyNavLink to={"/"}>Home</MyNavLink>
           </li>
